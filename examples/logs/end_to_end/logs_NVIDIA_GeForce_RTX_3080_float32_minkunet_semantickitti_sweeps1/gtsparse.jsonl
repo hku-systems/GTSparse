@@ -1,0 +1,5 @@
+{"batch_index": 0, "end2end_ms": 42.50521469116211, "frame_ids": ["08_000000"], "logit_rows": 67436, "num_classes": 19, "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 1, "end2end_ms": 42.67289733886719, "frame_ids": ["08_000001"], "logit_rows": 67742, "num_classes": 19, "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 2, "end2end_ms": 42.4835205078125, "frame_ids": ["08_000002"], "logit_rows": 67619, "num_classes": 19, "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 3, "end2end_ms": 42.32191848754883, "frame_ids": ["08_000003"], "logit_rows": 67127, "num_classes": 19, "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 4, "end2end_ms": 42.238975524902344, "frame_ids": ["08_000004"], "logit_rows": 66897, "num_classes": 19, "timing_repeats": 3, "timing_warmup_repeats": 2}

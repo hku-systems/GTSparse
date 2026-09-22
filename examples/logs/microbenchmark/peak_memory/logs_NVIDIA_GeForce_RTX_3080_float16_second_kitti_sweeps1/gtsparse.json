@@ -1,0 +1,8 @@
+{
+  "backend": "gtsparse",
+  "dtype": "fp16",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "peak_memory_mb": 105.31005859375,
+  "workload": "second_kitti_sweeps1"
+}

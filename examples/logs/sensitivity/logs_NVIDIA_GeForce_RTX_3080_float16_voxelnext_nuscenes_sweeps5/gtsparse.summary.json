@@ -1,0 +1,34 @@
+{
+  "backend": "gtsparse",
+  "batch": 1,
+  "data_root": "dataset/nuscenes",
+  "dtype": "fp16",
+  "frames_logged": 50,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "min_template": 0,
+  "random_sample": false,
+  "spconv_do_sort": true,
+  "split": "test",
+  "stats": {
+    "conv_only": {
+      "count": 50,
+      "max_ms": 12.000255584716797,
+      "mean_ms": 7.302141399383545,
+      "median_ms": 7.204927921295166,
+      "min_ms": 5.914207935333252
+    },
+    "end2end": {
+      "count": 50,
+      "max_ms": 13.6560640335083,
+      "mean_ms": 7.632514610290527,
+      "median_ms": 7.387120008468628,
+      "min_ms": 5.851776123046875
+    }
+  },
+  "sweeps": 5,
+  "timing_repeats": 3,
+  "timing_warmup_repeats": 2,
+  "torchsparse_hash_rsv_ratio": null,
+  "warmup_batches": 20,
+  "workload": "voxelnext_nuscenes_sweeps5"
+}

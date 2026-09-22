@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this artifact in your research, please cite the paper below."
+title: "GTSparse: A Geometric-Template-Driven Sparse Convolution Runtime for GPUs"
+authors:
+  - family-names: Guan
+    given-names: Xiuxian
+    affiliation: "The University of Hong Kong"
+  - family-names: Zhang
+    given-names: Zongyuan
+    affiliation: "The University of Hong Kong"
+  - family-names: Qi
+    given-names: Ji
+    affiliation: "Institute of Software, Chinese Academy of Sciences"
+  - family-names: Cui
+    given-names: Heming
+    affiliation: "The University of Hong Kong"
+preferred-citation:
+  type: conference-paper
+  title: "GTSparse: A Geometric-Template-Driven Sparse Convolution Runtime for GPUs"
+  authors:
+    - family-names: Guan
+      given-names: Xiuxian
+    - family-names: Zhang
+      given-names: Zongyuan
+    - family-names: Qi
+      given-names: Ji
+    - family-names: Cui
+      given-names: Heming
+  collection-title: "Proceedings of the 22nd European Conference on Computer Systems (EuroSys '27)"
+  publisher:
+    name: ACM
+  year: 2027
+  doi: "10.1145/3842654.3848577"
+license: BSD-3-Clause

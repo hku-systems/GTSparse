@@ -1,0 +1,8 @@
+{
+  "backend": "minkowski",
+  "dtype": "fp32",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "peak_memory_mb": 155.13818359375,
+  "workload": "voxelnext_nuscenes_sweeps10"
+}

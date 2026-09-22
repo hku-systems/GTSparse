@@ -1,0 +1,8 @@
+{
+  "backend": "gtsparse",
+  "dtype": "fp16",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "peak_memory_mb": 255.59619140625,
+  "workload": "voxelnext_nuscenes_sweeps10"
+}

@@ -1,0 +1,19 @@
+{
+  "backend": "gtsparse",
+  "batch": 1,
+  "data_root": "dataset/semantickitti",
+  "device": "cuda:0",
+  "dtype": "fp32",
+  "frame": "",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "log_dir": "examples/logs/end_to_end/logs_NVIDIA_GeForce_RTX_3080_float32_minkunet_semantickitti_sweeps1",
+  "sorted": false,
+  "spconv_do_sort": true,
+  "split": "val",
+  "sweeps": 1,
+  "timing_repeats": 3,
+  "timing_warmup_repeats": 2,
+  "warmup": 20,
+  "workload": "minkunet_semantickitti_sweeps1"
+}

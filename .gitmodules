@@ -1,0 +1,15 @@
+[submodule "third_parties/cumm"]
+	path = third_parties/cumm
+	url = https://github.com/FindDefinition/cumm
+[submodule "third_parties/spconv"]
+	path = third_parties/spconv
+	url = https://github.com/traveller59/spconv.git
+[submodule "third_parties/torchsparse"]
+	path = third_parties/torchsparse
+	url = https://github.com/mit-han-lab/torchsparse.git
+[submodule "third_parties/sparsehash"]
+	path = third_parties/sparsehash
+	url = https://github.com/sparsehash/sparsehash.git
+[submodule "third_parties/MinkowskiEngineCuda13"]
+	path = third_parties/MinkowskiEngineCuda13
+	url = https://github.com/AzharSindhi/MinkowskiEngineCuda13.git

@@ -1,0 +1,22 @@
+# Host-local state that must not enter the image: the venv and builds were
+# compiled for the host machine, datasets are mounted at runtime.
+.venv
+.cuda
+build
+**/build
+dataset
+logs
+results
+figures
+paper
+ActiMM
+AGENTS.md
+.git
+**/*.tar.gz
+**/__pycache__
+*.pyc
+*.egg-info
+**/*.egg-info
+*.so
+Dockerfile
+.dockerignore

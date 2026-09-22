@@ -1,0 +1,5 @@
+{"batch_index": 0, "conv_only_ms": 22.120447158813477, "end2end_ms": 21.86444854736328, "frame_ids": ["1b9a789e08bb4b7b89eacb2176c70840"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 1, "conv_only_ms": 17.693695068359375, "end2end_ms": 18.391647338867188, "frame_ids": ["fdcf214ba54b4241a12529a9d81d051c"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 2, "conv_only_ms": 18.320383071899414, "end2end_ms": 18.412607192993164, "frame_ids": ["1c05e9f2e6364d2c8ceb0ff2f0f72fdb"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 3, "conv_only_ms": 17.85817527770996, "end2end_ms": 18.524160385131836, "frame_ids": ["56303112f37244bbbd0a1e0ee012b9bc"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 4, "conv_only_ms": 17.610559463500977, "end2end_ms": 18.39673614501953, "frame_ids": ["02fd302178dd44568ae305320ea24054"], "timing_repeats": 3, "timing_warmup_repeats": 2}

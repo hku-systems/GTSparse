@@ -1,0 +1,8 @@
+{
+  "backend": "spconv",
+  "dtype": "fp16",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "peak_memory_mb": 50.5712890625,
+  "workload": "second_kitti_sweeps1"
+}

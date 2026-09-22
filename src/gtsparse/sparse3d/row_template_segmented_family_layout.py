@@ -1,0 +1,118 @@
+from __future__ import annotations
+
+SEGMENT_FAMILY_NAMES = ("center", "single", "skip2every3", "skip1every3", "full27")
+
+FAMILY_CENTER = 0
+FAMILY_SINGLE = 1
+FAMILY_SKIP2EVERY3 = 2
+FAMILY_SKIP1EVERY3 = 3
+FAMILY_FULL27 = 4
+
+FAMILY_CENTER_START = 0
+FAMILY_SINGLE_START = 1
+FAMILY_SKIP2EVERY3_START = 27
+FAMILY_SKIP1EVERY3_START = 53
+FAMILY_FULL27_START = 79
+
+FAMILY_CENTER_COUNT = 1
+FAMILY_SINGLE_COUNT = 26
+FAMILY_SKIP2EVERY3_COUNT = 26
+FAMILY_SKIP1EVERY3_COUNT = 26
+FAMILY_FULL27_COUNT = 1
+
+FAMILY_CENTER_END = FAMILY_SINGLE_START - 1
+FAMILY_SINGLE_END = FAMILY_SKIP2EVERY3_START - 1
+FAMILY_SKIP2EVERY3_END = FAMILY_SKIP1EVERY3_START - 1
+FAMILY_SKIP1EVERY3_END = FAMILY_FULL27_START - 1
+FAMILY_FULL27_END = FAMILY_FULL27_START + FAMILY_FULL27_COUNT - 1
+
+FAMILY_CENTER_PAYLOAD_WIDTH = 2
+FAMILY_SINGLE_PAYLOAD_WIDTH = 3
+FAMILY_SKIP2EVERY3_PAYLOAD_WIDTH = 10
+FAMILY_SKIP1EVERY3_PAYLOAD_WIDTH = 19
+FAMILY_FULL27_PAYLOAD_WIDTH = 28
+
+FAMILY_CENTER_SLOT_COUNT = 1
+FAMILY_SINGLE_SLOT_COUNT = 2
+FAMILY_SKIP2EVERY3_SLOT_COUNT = 9
+FAMILY_SKIP1EVERY3_SLOT_COUNT = 18
+FAMILY_FULL27_SLOT_COUNT = 27
+
+SEGMENT_TEMPLATE_COUNTS = (
+    FAMILY_CENTER_COUNT,
+    FAMILY_SINGLE_COUNT,
+    FAMILY_SKIP2EVERY3_COUNT,
+    FAMILY_SKIP1EVERY3_COUNT,
+    FAMILY_FULL27_COUNT,
+)
+SEGMENT_PAYLOAD_WIDTHS = (
+    FAMILY_CENTER_PAYLOAD_WIDTH,
+    FAMILY_SINGLE_PAYLOAD_WIDTH,
+    FAMILY_SKIP2EVERY3_PAYLOAD_WIDTH,
+    FAMILY_SKIP1EVERY3_PAYLOAD_WIDTH,
+    FAMILY_FULL27_PAYLOAD_WIDTH,
+)
+
+SEGMENT_TEMPLATE_STARTS = (
+    FAMILY_CENTER_START,
+    FAMILY_SINGLE_START,
+    FAMILY_SKIP2EVERY3_START,
+    FAMILY_SKIP1EVERY3_START,
+    FAMILY_FULL27_START,
+)
+
+NUM_SEGMENT_TEMPLATES = 80
+
+TEMPLATE_TO_FAMILY = tuple(
+    [FAMILY_CENTER] * FAMILY_CENTER_COUNT
+    + [FAMILY_SINGLE] * FAMILY_SINGLE_COUNT
+    + [FAMILY_SKIP2EVERY3] * FAMILY_SKIP2EVERY3_COUNT
+    + [FAMILY_SKIP1EVERY3] * FAMILY_SKIP1EVERY3_COUNT
+    + [FAMILY_FULL27] * FAMILY_FULL27_COUNT
+)
+TEMPLATE_LOCAL_INDEX = tuple(
+    [0]
+    + list(range(FAMILY_SINGLE_COUNT))
+    + list(range(FAMILY_SKIP2EVERY3_COUNT))
+    + list(range(FAMILY_SKIP1EVERY3_COUNT))
+    + [0]
+)
+
+
+def family_from_template_id(template_id: int) -> int:
+    return int(TEMPLATE_TO_FAMILY[int(template_id)])
+
+
+def local_index_from_template_id(template_id: int) -> int:
+    return int(TEMPLATE_LOCAL_INDEX[int(template_id)])
+
+
+def payload_width_from_template_id(template_id: int) -> int:
+    family_id = family_from_template_id(int(template_id))
+    return int(SEGMENT_PAYLOAD_WIDTHS[family_id])
+
+
+def family_base_from_template_id(template_id: int) -> int:
+    template_id = int(template_id)
+    if template_id <= FAMILY_CENTER_END:
+        return 0
+    if template_id <= FAMILY_SINGLE_END:
+        return template_id - FAMILY_SINGLE_START
+    if template_id <= FAMILY_SKIP2EVERY3_END:
+        return template_id - FAMILY_SKIP2EVERY3_START
+    if template_id <= FAMILY_SKIP1EVERY3_END:
+        return template_id - FAMILY_SKIP1EVERY3_START
+    return 0
+
+
+def family_count_from_template_id(template_id: int) -> int:
+    template_id = int(template_id)
+    if template_id <= FAMILY_CENTER_END:
+        return 0
+    if template_id <= FAMILY_SINGLE_END:
+        return 1
+    if template_id <= FAMILY_SKIP2EVERY3_END:
+        return 8
+    if template_id <= FAMILY_SKIP1EVERY3_END:
+        return 17
+    return 26

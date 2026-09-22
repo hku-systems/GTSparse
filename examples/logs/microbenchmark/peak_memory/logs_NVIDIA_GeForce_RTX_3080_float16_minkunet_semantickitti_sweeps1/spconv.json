@@ -1,0 +1,8 @@
+{
+  "backend": "spconv",
+  "dtype": "fp16",
+  "frames": 5,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "peak_memory_mb": 195.63330078125,
+  "workload": "minkunet_semantickitti_sweeps1"
+}

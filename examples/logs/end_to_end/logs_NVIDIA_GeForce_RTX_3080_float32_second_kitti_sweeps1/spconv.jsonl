@@ -1,0 +1,5 @@
+{"batch_index": 0, "conv_only_ms": 8.927231788635254, "end2end_ms": 16.65443229675293, "frame_ids": ["000000"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 1, "conv_only_ms": 9.064224243164062, "end2end_ms": 17.098751068115234, "frame_ids": ["000001"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 2, "conv_only_ms": 7.826848030090332, "end2end_ms": 16.64409637451172, "frame_ids": ["000002"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 3, "conv_only_ms": 7.509215831756592, "end2end_ms": 16.367616653442383, "frame_ids": ["000003"], "timing_repeats": 3, "timing_warmup_repeats": 2}
+{"batch_index": 4, "conv_only_ms": 8.275775909423828, "end2end_ms": 17.077024459838867, "frame_ids": ["000004"], "timing_repeats": 3, "timing_warmup_repeats": 2}
